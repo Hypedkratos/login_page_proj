@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        top: 2px;
+        font-family: sans-serif;
+      }
+      .main {
+        height: 100dvh;
+        width: 100dvw;
+        background-image: url(./pexels-riccardo-bertolo-4245826.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loginbox {
+        width: 320px;
+        height: 420px;
+        background: #000;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 70px 30px;
+        position: relative;
+      }
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -300%);
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0 0 20px 0;
+        text-align: center;
+        font-size: 27px;
+      }
+
+      .loginbox p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .loginbox input {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .loginbox input[type="text"],
+      input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #eee6c6;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      .loginbox input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fb2525;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 15px;
+      }
+
+      .loginbox input[type="submit"]:hover {
+        cursor: pointer;
+        background: #000000;
+        color: darkgrey;
+      }
+
+      .loginbox a {
+        font-size: 12px;
+      }
+
+      .loginbox a:hover {
+        color: #ffc107;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="loginbox">
+        <img src="icons8-anonymous-mask-48.png" class="avatar" alt="icon" />
+        <h1>Login here</h1>
+        <form action="">
+          <p>USERNAME</p>
+          <input type="text" name="" placeholder="Enter username" />
+          <p>PASSWORD</p>
+          <input type="password" name="" placeholder="Enter password" />
+          <input type="submit" name="" value="Login" />
+          <a href="#">FORGOT PASSWORD?</a>
+          <br />
+          <a href="#">DON'T HAVE AN ACCOUNT?</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
